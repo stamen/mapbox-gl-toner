@@ -18,4 +18,4 @@ This is the result of an afternoon hacking up the Mapbox GL default style. There
 
 Enjoy!
 
-![screenshot](screenshot.png)
+![screenshot](tonergl_2014px_animated.gif)
