@@ -12,3 +12,5 @@ First, get [mapbox-gl-native](https://github.com/mapbox/mapbox-gl-native) runnin
 Then, overwrite Mapbox's [style.js](https://github.com/mapbox/mapbox-gl-native/blob/master/bin/style.js) file with the `style.js` found in this repo.
 
 Enjoy!
+
+![screenshot](screenshot.png)
