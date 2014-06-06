@@ -198,7 +198,6 @@ module.exports = {
             "value": "snow",
             "type": "fill"
         },
-*/
         "overlay_wetland": {
             "source": "outdoors",
             "layer": "landuse_overlay",
@@ -206,6 +205,7 @@ module.exports = {
             "value": ["wetland", "wetland_noveg"],
             "type": "fill"
         },
+*/
         "overlay_breakwater_pier": {
             "source": "outdoors",
             "layer": "landuse_overlay",
