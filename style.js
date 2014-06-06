@@ -34,6 +34,7 @@ module.exports = {
             "join": "round",
             "type": "line"
         },
+/*
         "landcover_wood": {
             "source": "outdoors",
             "layer": "landcover",
@@ -69,6 +70,7 @@ module.exports = {
             "value": "snow",
             "type": "fill"
         },
+*/
         "water": {
             "source": "outdoors",
             "layer": "water",
@@ -146,6 +148,7 @@ module.exports = {
             "value": "school",
             "type": "fill"
         },
+/*
         "landuse_wood": {
             "source": "outdoors",
             "layer": "landuse",
@@ -195,6 +198,7 @@ module.exports = {
             "value": "snow",
             "type": "fill"
         },
+*/
         "overlay_wetland": {
             "source": "outdoors",
             "layer": "landuse_overlay",
@@ -212,6 +216,7 @@ module.exports = {
             ],
             "type": "fill"
         },
+/*
         "hillshade_full_shadow": {
             "source": "outdoors",
             "layer": "hillshade",
@@ -278,6 +283,7 @@ module.exports = {
             "type": "text",
             "maxAngleDelta": 0.5
         },
+*/
         "building": {
             "source": "outdoors",
             "layer": "building",
@@ -1070,6 +1076,7 @@ module.exports = {
             "name": "background",
             "bucket": "background"
         },
+/*
         {
             "name": "landcover_snow",
             "bucket": "landcover_snow"
@@ -1094,14 +1101,17 @@ module.exports = {
             "name": "landuse_wood",
             "bucket": "landuse_wood"
         },
+*/
         {
             "name": "landuse_school",
             "bucket": "landuse_school"
         },
+/*
         {
             "name": "landuse_sand",
             "bucket": "landuse_sand"
         },
+*/
         {
             "name": "landuse_pitch",
             "bucket": "landuse_pitch"
@@ -1114,6 +1124,7 @@ module.exports = {
             "name": "landuse_industrial",
             "bucket": "landuse_industrial"
         },
+/*
         {
             "name": "landuse_scrub",
             "bucket": "landuse_scrub"
@@ -1134,6 +1145,7 @@ module.exports = {
             "name": "landuse_snow",
             "bucket": "landuse_snow"
         },
+*/
         {
             "name": "landuse_hospital",
             "bucket": "landuse_hospital"
@@ -1170,6 +1182,7 @@ module.exports = {
             "name": "building_wall",
             "bucket": "building"
         },
+/*
         {
             "name": "hillshade_full_highlight",
             "bucket": "hillshade_full_highlight"
@@ -1198,6 +1211,7 @@ module.exports = {
             "name": "contour_line_regular",
             "bucket": "contour_line_other"
         },
+*/
         {
             "name": "barrier_line_gate",
             "bucket": "barrier_line_gate"
@@ -1616,7 +1630,7 @@ module.exports = {
         }
     ],
     "constants": {
-        "land": "rgba(255,255,255,0.9)",
+        "land": "#fff",
         "water": "#000",
         "water_dark": "#000",
         "crop": "#eee",
@@ -1637,11 +1651,11 @@ module.exports = {
         "motorway": "#000",
         "main": "#333",
         "street": "#666",
-        "text": "#666",
-        "text_stroke": "rgba(0,0,0,0.1)",
-        "country_text": "#222",
-        "marine_text": "#aaa",
-        "water_text": "#111",
+        "text": "#000",
+        "text_stroke": "#fff",
+        "country_text": "#000",
+        "marine_text": "#fff",
+        "water_text": "#fff",
 
         "land_night": "#111",
         "water_night": "#111",
@@ -1928,7 +1942,7 @@ module.exports = {
                     "width": 5
                 },
                 "admin_maritime": {
-                    "color": "#ccc",
+                    "color": "#000",
                     "width": [
                         "stops",
                         {"z": 6, "val": 1},
@@ -2151,7 +2165,7 @@ module.exports = {
                 },
                 "water": {
                     "color": "water",
-                    "stroke": "#aaa"
+                    "stroke": "water"
                 },
                 "aeroway_fill": {
                     "color": "#ddd"
@@ -2475,7 +2489,7 @@ module.exports = {
                 },
                 "country_label": {
                     "color": "country_text",
-                    "stroke": "rgba(0,0,0,0.1)",
+                    "stroke": "#fff",
                     "strokeWidth": 0.5,
                     "size": "country_label_size"
                 },
@@ -2569,10 +2583,10 @@ module.exports = {
                     "stroke": "water"
                 },
                 "state_label": {
-                    "color": "#333",
+                    "color": "#000",
                     "strokeWidth": 0.4,
                     "strokeBlur": 1,
-                    "stroke": "rgba(0,0,0,0.1)",
+                    "stroke": "#fff",
                     "size": [
                         "stops",
                         {"z": 3.99, "val": 0},
@@ -2582,7 +2596,7 @@ module.exports = {
                     ]
                 },
                 "place_label_city": {
-                    "color": "#444",
+                    "color": "#000",
                     "strokeWidth": 0.4,
                     "stroke": "text_stroke",
                     "size": [
@@ -2595,7 +2609,7 @@ module.exports = {
                     ]
                 },
                 "place_label_town": {
-                    "color": "#777",
+                    "color": "#000",
                     "strokeWidth": 0.3,
                     "strokeBlur": 2,
                     "stroke": "text_stroke",
@@ -2608,7 +2622,7 @@ module.exports = {
                     ]
                 },
                 "place_label_village": {
-                    "color": "#666",
+                    "color": "#000",
                     "strokeWidth": 0.3,
                     "strokeBlur": 2,
                     "stroke": "text_stroke",
@@ -2622,7 +2636,7 @@ module.exports = {
                     ]
                 },
                 "place_label_other": {
-                    "color": "#777",
+                    "color": "#000",
                     "stroke": "text_stroke",
                     "size": [
                         "stops",
@@ -2633,21 +2647,21 @@ module.exports = {
                     ]
                 },
                 "road_label_1": {
-                    "color": "#555",
+                    "color": "#000",
                     "stroke": "land",
                     "strokeWidth": 0.6,
                     "strokeBlur": 2,
                     "size": "road_label_1_size"
                 },
                 "road_label_2": {
-                    "color": "#555",
+                    "color": "#000",
                     "stroke": "land",
                     "strokeWidth": 0.6,
                     "strokeBlur": 2,
                     "size": "road_label_2_size"
                 },
                 "road_label_3": {
-                    "color": "#555",
+                    "color": "#000",
                     "stroke": "land",
                     "strokeWidth": 0.6,
                     "strokeBlur": 2,
@@ -2655,7 +2669,7 @@ module.exports = {
                 },
                 "water_label": {
                     "color": "water_dark",
-                    "stroke": "rgba(0,0,0,0.1)"
+                    "stroke": "water"
                 },
                 "waterway_label": {
                     "color": "water_dark",
@@ -2699,14 +2713,14 @@ module.exports = {
                     ]
                 },
                 "poi_label_1-2": {
-                    "color": "#444",
+                    "color": "#000",
                     "size": "poi_label_1-2_size",
                     "stroke": "land",
                     "strokeWidth": 0.3,
                     "strokeBlur": 1,
                 },
                 "poi_label_3": {
-                    "color": "#444",
+                    "color": "#000",
                     "size": "poi_label_3_size",
                     "stroke": "land",
                     "strokeWidth": 0.3,
@@ -2718,7 +2732,7 @@ module.exports = {
                     ]
                 },
                 "poi_label_4_4": {
-                    "color": "#444",
+                    "color": "#000",
                     "size": 10,
                     "opacity": [
                         "stops",
@@ -2730,7 +2744,7 @@ module.exports = {
                     "strokeBlur": 1,
                 },
                 "poi_label_4_16": {
-                    "color": "#444",
+                    "color": "#000",
                     "size": 10,
                     "opacity": [
                         "stops",
@@ -2742,7 +2756,7 @@ module.exports = {
                     "strokeBlur": 1,
                 },
                 "poi_label_4_all": {
-                    "color": "#444",
+                    "color": "#000",
                     "size": 10,
                     "opacity": [
                         "stops",
